@@ -51,7 +51,9 @@ Built using **HTML, CSS, JavaScript**, and weather data from the **OpenWeatherMa
 - Mix of `Poppins`, `Roboto`, and comic-style fonts like `Bangers` or `Comic Neue`
 
 **Color Scheme:**  
-
+<p align="center">
+  <img src="https://github.com/irllyliketoast/Interactive-Weather-App/blob/15140ad07e457c669dab4b4a5191707573efa366/Technical%20Documentation/ColorPalette.png" width="1500" height ="300">
+</p>
 
 ---
 
