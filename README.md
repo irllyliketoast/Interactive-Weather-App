@@ -42,6 +42,8 @@
   - Account creation and secure login  
   - Cookie-based or JWT authentication  
   - Smooth UI transitions, halftone effects, and SVG styling
+  - Password rules for security
+  - User input sanitation
 
 ---
 
