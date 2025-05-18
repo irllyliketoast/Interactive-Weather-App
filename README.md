@@ -19,6 +19,7 @@ Built using **HTML, CSS, JavaScript**, and weather data from the **OpenWeatherMa
 |--------|-------------|
 | Globe Rendering | Rotating globe via `Three.js` or `Globe.gl` |
 | User Input | Search bar accepts `City, State, Country` (supports multi-language in future) |
+| Search Bar | Autofill based on user input |
 | Weather API | Integrated OpenWeatherMap with support for multiple weather types |
 | Comic Styling | SVG overlays, halftone textures, bold comic palettes |
 | Animations | Page transitions, weather pop-ups, globe motion via GSAP/Three.js |
