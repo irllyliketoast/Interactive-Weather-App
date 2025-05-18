@@ -57,5 +57,3 @@ Built using **HTML, CSS, JavaScript**, and weather data from the **OpenWeatherMa
 </p>
 
 ---
-
-## Setup Instructions
