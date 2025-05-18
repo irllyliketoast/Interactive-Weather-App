@@ -32,7 +32,7 @@ Built using **HTML, CSS, JavaScript**, and weather data from the **OpenWeatherMa
 
 - [ ] User login and signup  
 - [ ] Profile management  
-- [ ] Custom language selection  
+- [ ] Custom language selection with toggle button 
 - [ ] Weather favorites and saved locations  
 - [ ] Interactive data visualizations (e.g., [InformationIsBeautiful](https://informationisbeautiful.net/))  
 - [ ] Cookie-based authentication  
