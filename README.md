@@ -26,7 +26,7 @@ Built using **HTML, CSS, JavaScript**, and weather data from the **OpenWeatherMa
 
 ---
 
-## Future Backend Plans
+## Future Plans
 
 > *Once the frontend main page is complete, we plan to connect it to a lightweight Node/Express or Java backend.*
 
