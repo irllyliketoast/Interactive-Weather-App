@@ -108,10 +108,10 @@ Animated outline of a cloud, sun, and lightning bolt pulsing in sync with loadin
 
 ---
 
-## Dev Roles
+## Primary Dev Roles
 
-* **Laura Estremera** – Scrum Master + Frontend
-* **Tyler** – Frontend + Backend
+* **Laura Estremera** – Scrum Master + Frontend + Database
+* **Tyler** – Frontend + Backend + Database
 * **Dylan** – Globe animations + Backend 
 
 ---
