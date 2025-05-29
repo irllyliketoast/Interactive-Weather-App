@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Setup -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="index.css">
+  
+  <title>GraphicCast</title>
+
+  <!-- Web Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght#300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- =============================
+       Main App Container
+       ============================= -->
+  <div class="container">
+
+    <!-- === Search Bar Section === -->
+    <div class="search-box">
+      <!-- Location icon -->
+      <i class="fa-solid fa-location-dot"></i>
+      <!-- User input field for location -->
+      <input id="place-input" type="text" placeholder="Enter your location">
+      <!-- Magnifying glass search button -->
+      <button id="magnifying-glass-button" class="fa-solid fa-magnifying-glass"></button>
+    </div>
+
+    <!-- === Not Found Message (404) === -->
+    <div class="not-found">
+      <!-- Image shown when location is invalid -->
+      <img src="404.png">
+      <p>Oops! Invalid location :/</p>
+    </div>
+
+    <!-- === Weather Output Box === -->
+    <div class="weather-box">
+      <!-- Icon representing weather condition -->
+      <img src="">
+      <!-- Current temperature -->
+      <p class="temperature"></p>
+      <!-- Textual weather description (e.g. "light rain") -->
+      <p class="description"></p>
+    </div>
+
+    <!-- === Extra Weather Details (Humidity & Wind) === -->
+    <div class="weather-details">
+
+      <!-- Humidity Block -->
+      <div class="humidity">
+        <i class="fa-solid fa-water"></i>
+        <div class="text">
+          <span></span> <!-- % Value will be inserted by JS -->
+          <p>Humidity</p>
+        </div>
+      </div>
+
+      <!-- Wind Speed Block -->
+      <div class="wind">
+        <i class="fa-solid fa-wind"></i>
+        <div class="text">
+          <span></span> <!-- Speed value inserted by JS -->
+          <p>Wind Speed</p>
+        </div>
+      </div>
+
+    </div> <!-- End .weather-details -->
+
+  </div> <!-- End .container -->
+
+  <!-- =============================
+       Scripts & External Libraries
+       ============================= -->
+
+  <!-- FontAwesome icon library -->
+  <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+
+  <!-- Main JavaScript for Weather API logic -->
+  <script src="index.js"></script>
+
+  <!-- Enable Enter Key to Trigger Search -->
+  <script>
+    var input = document.getElementById("place-input");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("magnifying-glass-button").click();
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+<!-- Note: API Key is stored in JS file (not secure for production) -->
+<!-- API Key: d8fc0cd12995dd645cd83b2f3df64d7a -->
