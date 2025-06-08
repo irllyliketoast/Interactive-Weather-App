@@ -29,7 +29,7 @@
 │ ├── LoginPage.html
 │ ├── SignupPage.html
 │ ├── IndexPage.html
-│ ├── DataViz.html
+│ ├── DataVisualization.html
 │ ├── Profile.html
 │ ├── Settings.html
 │ └── LearnModules.html
@@ -169,18 +169,29 @@ Modules are non-linear—users can explore in any order, promoting autonomy and 
 
 ## Backend Architecture Overview (Java + Spring Boot)
 
-### Core Structure
+### Backend File Structure
+```
+Backend/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── graphiccast/
+│       │           ├── config/              # Security & app config
+│       │           ├── controller/          # REST API endpoints
+│       │           ├── dto/                 # Data Transfer Objects (request/response)
+│       │           ├── exception/           # Custom exceptions + handlers
+│       │           ├── model/               # Entity classes (User, Favorite, etc.)
+│       │           ├── repository/          # Spring Data interfaces
+│       │           ├── security/            # JWT, filters, auth handlers
+│       │           ├── service/             # Business logic
+│       │           └── GraphicCastApp.java  # Main Spring Boot app file
+│       └── resources/
+│           ├── application.properties       # DB credentials, JWT keys, etc.
+│           └── static/                      # (Optional) Static assets
+└── pom.xml                                  # Maven dependencies
+```
 
-```
-com.graphiccast
-├── controller       // API endpoints
-├── model            // Data classes (entities)
-├── repository       // Interfaces for DB access
-├── service          // Business logic
-├── dto              // Data Transfer Objects
-├── config           // Security and web config
-└── GraphicCastApp   // Main class
-```
 
 ### GraphicCast's backend will support:
 * Secure user authentication
