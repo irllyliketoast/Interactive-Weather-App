@@ -10,7 +10,7 @@
 
 ## Frontend Architecture
 
-### Frontend File Structure (Proposed)
+### Frontend File Structure
 
 ```
 /frontend
