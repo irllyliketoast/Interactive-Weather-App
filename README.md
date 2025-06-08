@@ -10,6 +10,37 @@
 
 ## Frontend Architecture
 
+### Frontend File Structure (Proposed)
+
+```
+/frontend
+├── /assets
+│ ├── /icons
+│ ├── /images
+│ └── /videos
+├── /components
+│ ├── Globe.js
+│ ├── Navbar.js
+│ ├── LanguageToggle.js
+│ └── WeatherCard.js
+├── /pages
+│ ├── LandingPage.html
+│ ├── HomePage.html
+│ ├── LoginPage.html
+│ ├── SignupPage.html
+│ ├── IndexPage.html
+│ ├── DataViz.html
+│ ├── Profile.html
+│ ├── Settings.html
+│ └── LearnModules.html
+├── /styles
+│ └── main.css
+├── /scripts
+│ └── app.js
+└── index.html
+```
+
+
 ### Landing Experience
 
 Upon opening the website, users are greeted by a stylized landing page featuring a bold ASCII-text message:
@@ -169,36 +200,35 @@ com.graphiccast
 ### Controllers
 These expose REST endpoints.
 
-#### ```AuthController``` handles:
+#### AuthController handles:
 
-```POST /signup
+POST /signup
 POST /login
-GET /logout```
-
+GET /logout
 JWT issuing and validation
 
-#### ```UserController``` handles:
+#### UserController handles:
 
-```GET /user/me
+GET /user/me
 PUT /user/settings
-DELETE /user/delete```
+DELETE /user/delete
 
-#### ```WeatherController``` handles: 
+#### WeatherController handles: 
 
-```GET /weather/current?lat=..&lon=..
-GET /weather/history?locationId=..```
+GET /weather/current?lat=..&lon=..
+GET /weather/history?locationId=..
 
-#### ```FavoritesController``` handles:
+#### FavoritesController handles:
 
-```POST /favorites
+POST /favorites
 GET /favorites
-DELETE /favorites/{id}```
+DELETE /favorites/{id}
 
-#### ```ModuleController``` handles:
+#### ModuleController handles:
 
-```GET /modules
+GET /modules
 GET /modules/{id}
-POST /modules/{id}/submit-quiz```
+POST /modules/{id}/submit-quiz
 
 ### Services
 Each controller delegates logic to a matching service class. Examples:
