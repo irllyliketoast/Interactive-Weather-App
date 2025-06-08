@@ -169,15 +169,6 @@ Modules are non-linear—users can explore in any order, promoting autonomy and 
 
 ## Backend Architecture Overview (Java + Spring Boot)
 
-GraphicCast's backend will support:
-* Secure user authentication
-* Language and profile settings
-* Weather data retrieval and storage
-* Favorites and user history
-* Quiz tracking and module progress
-* Clean REST APIs for frontend interaction
-
-
 ### Core Structure
 
 ```
@@ -191,6 +182,14 @@ com.graphiccast
 └── GraphicCastApp   // Main class
 ```
 
+### GraphicCast's backend will support:
+* Secure user authentication
+* Language and profile settings
+* Weather data retrieval and storage
+* Favorites and user history
+* Quiz tracking and module progress
+* Clean REST APIs for frontend interaction
+
 ### Models
 1. User
 2. Favorite
@@ -201,38 +200,32 @@ com.graphiccast
 These expose REST endpoints.
 
 #### AuthController handles:
-
 POST /signup
 POST /login
 GET /logout
 JWT issuing and validation
 
 #### UserController handles:
-
 GET /user/me
 PUT /user/settings
 DELETE /user/delete
 
 #### WeatherController handles: 
-
 GET /weather/current?lat=..&lon=..
 GET /weather/history?locationId=..
 
 #### FavoritesController handles:
-
 POST /favorites
 GET /favorites
 DELETE /favorites/{id}
 
 #### ModuleController handles:
-
 GET /modules
 GET /modules/{id}
 POST /modules/{id}/submit-quiz
 
 ### Services
 Each controller delegates logic to a matching service class. Examples:
-
 * UserService: Registration, login, password hashing, JWT creation
 * WeatherService: Calls external APIs (OpenWeatherMap, Visual Crossing)
 * FavoriteService: Adds/removes favorites
