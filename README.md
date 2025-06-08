@@ -8,13 +8,14 @@
 
 ---
 
+## Frontend Architecture
+
 ### Landing Experience
 
 Upon opening the website, users are greeted by a stylized landing page featuring a bold ASCII-text message:
 **“Welcome to GraphicCast!”**
 Beneath this, a small white-outlined circular button with a downward arrow invites interaction. Clicking the button smoothly transitions the user into the main homepage.
 
----
 
 ### Homepage Navigation
 
@@ -24,7 +25,7 @@ The homepage features a floating menu with three primary options:
 * **The Developers** – Displays profile cards with brief bios for each team member, accompanied by contact buttons linking to LinkedIn profiles or email.
 * **Get Started** – Leads directly to the login page.
 
----
+
 
 ### Authentication Flow
 
@@ -53,7 +54,7 @@ The homepage features a floating menu with three primary options:
   Users are directed straight to the Index Page.
   Proper session management ensures that logging out disables the back-button from re-entering the platform without authentication.
 
----
+
 
 ### Index Page
 
@@ -75,7 +76,7 @@ At the bottom is a persistent **navigation dock** linking to:
 * **Settings**
 * **Log Out** (returns to the landing page with secure session termination)
 
----
+
 
 ### Data Visualization
 
@@ -86,7 +87,7 @@ This page dynamically populates if the user has favorited at least one location.
 
 If no favorites exist, the page remains blank with a prompt to explore and add locations from the Index Page.
 
----
+
 
 ### Profile Page
 
@@ -98,7 +99,7 @@ Displays:
 * Date of account creation
 * A selection of themed **weather pattern images** for setting a custom profile picture
 
----
+
 
 ### Settings Page
 
@@ -108,7 +109,7 @@ Offers:
 * A persistent **language toggle button** on all post-login pages for quick switching
 * A **“Delete My Account”** button that permanently removes user data from the database
 
----
+
 
 ### Modular Learning
 
